@@ -1,17 +1,19 @@
-package com.jbsa.libraryexercise;
+package com.jbsa.libraryexercise.repositories;
 
 /*
  * Copyright © 2015 Sky plc All Rights reserved.
  * Please do not make your solution publicly available in any way e.g. post in forums or commit to GitHub.
  */
 
+import com.jbsa.libraryexercise.Book;
+import com.jbsa.libraryexercise.repositories.BookRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class BookRepositoryStub implements BookRepository1 {
+public class BookRepositoryStub implements BookRepository {
     private static final String BOOK_REFERENCE_PREFIX = "BOOK-";
     private static final String THE_GRUFFALO_REFERENCE = BOOK_REFERENCE_PREFIX + "GRUFF472";
     private static final String WINNIE_THE_POOH_REFERENCE = BOOK_REFERENCE_PREFIX + "POOH222";

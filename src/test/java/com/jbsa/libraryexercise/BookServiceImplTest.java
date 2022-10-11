@@ -2,6 +2,9 @@ package com.jbsa.libraryexercise;
 
 import com.jbsa.libraryexercise.exceptions.BookNotFoundException;
 import com.jbsa.libraryexercise.exceptions.WrongBookReferenceException;
+import com.jbsa.libraryexercise.repositories.BookRepositoryStub;
+import com.jbsa.libraryexercise.service.BookService;
+import com.jbsa.libraryexercise.service.impl.BookServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

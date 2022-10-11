@@ -13,6 +13,7 @@ public class Book {
     @Column(unique = true)
     private String reference;
     private String title;
+    @Column(length = 700)
     private String review;
 
     public Book() {}
