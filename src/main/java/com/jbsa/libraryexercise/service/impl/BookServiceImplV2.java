@@ -39,7 +39,6 @@ public class BookServiceImplV2 implements BookService {
     private void validateBookReference(String bookReference) throws WrongBookReferenceException,
             BookNotFoundException {
         if(!bookReference.startsWith("BOOK-")){
-            System.out.println(bookReference+"===================");
             throw new WrongBookReferenceException("Book reference must begin with BOOK-");
         }
 
